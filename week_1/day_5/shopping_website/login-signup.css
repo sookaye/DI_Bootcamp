@@ -1,0 +1,79 @@
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+	width: 100%;
+	height:100%;
+	background-image:url(header.jpg);
+    font-family: 'Montserrat';
+}
+body:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    display:block;
+    z-index: -1;
+    background-image: linear-gradient(1deg, rgb(0 0 0 / 67%), rgb(70 70 231 / 65%));
+}
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 { 
+    color:var(--light-color--); 
+    text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    letter-spacing:1px; 
+    text-align:center; 
+    font-size: 2rem;
+}
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: var(--light-color--);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	transition: box-shadow .5s ease;
+}
+input:focus { 
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); 
+}
+.login button{
+    float: none;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: var(--purple-color--);
+    color: var(--light-color--);
+    width: auto;
+    border-radius: 3px;
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+.login  button:hover, .login button:hover {
+    background-color: var(--green-color--);
+    color: var(--light-color--);
+}
+
+:root {
+    --dark-color--:#000;
+    --light-color--:#fff;
+    --purple-color--:#4646e7;
+    --green-color--:#16a085;
+}
