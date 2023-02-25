@@ -2,34 +2,25 @@ body {
     margin: 0;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr) 0.5fr;
-    grid-gap: 1.5rem;
+.flex-box {
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
 }
 
-.grid>div {
-
+.flex-box>div {
+    height: 50px;
+    background-color: blue;
+    flex-grow: 1;
+    display: flex;
 }
 
-.item-1, .item-2, .item-3 {
-    background-color: red;
+.flex-box.item-1, .flex-box.item-3 {
+    width: 100%;
 }
-
-.item-4, .item-5, .item-6 {
-    background-color: rgb(25, 0, 255);
-}
-.item-7 {
-    background-color: rgb(247, 233, 44);
-    grid-column: span 2;
-}
-.item-5 {
-    grid-row: 1;
-    grid-column: 2;
-}
-.item-3 {
-    grid-row: 3;
-    grid-column: 1;
+.flex-box .item-2 {
+    width: 20em;
+    align-self: flex-end;
 }
