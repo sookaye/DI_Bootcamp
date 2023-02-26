@@ -1,13 +1,22 @@
 const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+
 fruits.splice(0,1);
 console.log(fruits);
 
-fruits.push('kiwi');
-const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+fruits.sort();
+console.log(fruits);
 
-console.log(first())
-moreFruits.splice(1[1],1[2]);
-moreFruits.shift();
-console.log(moreFruits);
-moreFruits.splice(0[1],1[2]);
-console.log(moreFruits.length);
+fruits.push('kiwi');
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+
+fruits.reverse();
+console.log(fruits);
+
+const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+console.log(moreFruits[1][1][0]);
+
+
+
