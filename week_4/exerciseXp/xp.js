@@ -119,6 +119,7 @@ const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
 let secretsociety = names.toString();
 console.log(secretsociety.toLocaleUpperCase());
 for (let i = 0; i < names.length; i++) {
-  console.log(names[i][0]);
+  let secretsociety = names[i][0];
+console.log(secretsociety);
 }
 
