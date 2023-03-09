@@ -14,3 +14,23 @@ if (wordNot < wordBad) {
  console.log(sentence);
 }
 ////////////////
+let key = 2;
+switch (key) {
+  case 1:
+   // console.log('Monday');
+    break;
+case 2 :
+  console.log('Tuesday');
+  break;
+  default:
+    break;
+}
+console.log(3 && 'Orange');
+console.log('' || 'Orange');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(0 && 'Orange');
+console.log('Orange' && 'Orange');
+console.log(true && null);
+console.log('Apple' && 'Orange');

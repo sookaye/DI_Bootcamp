@@ -19,15 +19,15 @@ if (newDog == 'Chihuahua') {
     console.log('I dont care, I prefer cats');
 }
 
-// ///////Even Or Odd
-// let user = prompt("Enter a number: ");
+///////Even Or Odd
+let user = prompt("Enter a number: ");
 
-// if(user % 2 == 0) {
-//     console.log("The number is even.");
-// }
-// else {
-//     console.log("The number is odd.");
-// }
+if(user % 2 == 0) {
+    console.log("The number is even.");
+}
+else {
+    console.log("The number is odd.");
+}
 
 //////// Exercise 4: Group Chat
 const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
@@ -41,20 +41,4 @@ if (users.length === 0) {
 } else {
     const remaing = users.length - 2
     console.log(`${users[0]} and ${users[1]} are ${remaing} more online`);
-}
-
-switch (users.length){
-    case 0:
-        console.log('no one is online');
-    break;
-
-    case 1:
-        console.log(`${users[0]} 'is online'`);
-    break;
-
-    case 2:
-    break;
-
-    default:
-    break;
 }

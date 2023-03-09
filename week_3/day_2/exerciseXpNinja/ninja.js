@@ -51,11 +51,12 @@ console.log('I found Nemo at',text.search('Nemo'));
 
 //Exercise 4 : Boom
 let fred = prompt('what is your age');
+let fr = 'Let me know';
 
 if (fred > 2) {
   alert('Boom');
 } else if (fred % 2) {
   alert('Boooom')
 } else {
-  alert('go home');
+  alert(fr.toUpperCase());
 };

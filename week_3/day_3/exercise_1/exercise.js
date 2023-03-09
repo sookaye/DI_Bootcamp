@@ -15,7 +15,7 @@ let login = {
 const letterType = sample.indexOf('j');
 let fred = prompt('what is your age');
 
-if (fred => && fredNot < fredYes) {};
+//if (fred => && fredNot < fredYes) {};
 
 if (fred > 2) {
   alert('your are too young');
