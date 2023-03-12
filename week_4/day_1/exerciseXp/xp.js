@@ -120,6 +120,6 @@ let secretsociety = names.toString();
 console.log(secretsociety.toLocaleUpperCase());
 for (let i = 0; i < names.length; i++) {
   let secretsociety = names[i][0];
-console.log(secretsociety);
+console.log(secretsociety.join());
 }
 
