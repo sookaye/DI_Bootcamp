@@ -1,0 +1,20 @@
+.banner {
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    background-color: blueviolet;
+    font-size: 3rem;
+    color: #fff;
+    align-self: center;
+    padding: 1rem;
+}
+
+.banner2 {
+    display: none;
+    justify-content: center;
+    background-color: rgb(226, 43, 43);
+    font-size: 3rem;
+    color: #fff;
+    align-self: center;
+    padding: 1rem;
+}
