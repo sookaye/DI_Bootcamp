@@ -1,0 +1,12 @@
+p {
+  background: yellow;
+  color: red;
+}
+
+#container {
+    display:none;
+    font-size: 5rem;
+    font-weight: 700;
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

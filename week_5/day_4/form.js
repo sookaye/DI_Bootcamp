@@ -61,4 +61,3 @@ function writeStory3() {
 function getButton() {
     return document.getElementById('lib-button')
 }
-
