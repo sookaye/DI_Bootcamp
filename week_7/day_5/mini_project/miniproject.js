@@ -66,11 +66,16 @@ function getCharWithoutSpace() {
     }
 }
 
+function wordCount() {
+  if (currentQuote) {
+    const wordCounts = currentQuote.quote.length;
+    alert(`Number of words: ${wordCounts}`);
+    }
+}
+
 generateBtn.addEventListener("click", generateRandomQuote);
 generateRandomQuote();
 
 charCountBtn.addEventListener('click', getCharWithSpace);
-getCharWithSpace();
-
 charCountNoSpaceBtn.addEventListener('click', getCharWithoutSpace);
-getCharWithoutSpace();
+wordCountBtn.addEventListener('click', wordCount);
