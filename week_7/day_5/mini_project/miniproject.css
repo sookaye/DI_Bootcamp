@@ -182,7 +182,9 @@ span.forgot a:hover {
   .block-social svg:hover {
     fill: var(--blue-color--);
   }
-
+  button#add-quote-btn {
+    background: var(--blue-color--);
+}
   :root {
     --light-color--: #fff;
     --dark-color--: #000;

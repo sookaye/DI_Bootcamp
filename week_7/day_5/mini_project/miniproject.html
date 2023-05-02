@@ -11,23 +11,23 @@
 </head>
 <body>
     <section id="quote-section">
-        <h1>Quote Generator</h1>
-        <p id="quote"></p>
-        <p id="author"></p>
     </section>
+    <button id="generate-quote">Generate Quote</button>
     <form id="add-quote-form">
-        <label for="quote-input">Quote:</label>
-        <input type="text" id="quote-input" required>
-        <label for="author-input">Author:</label>
-        <input type="text" id="author-input" required>
-        <button id='generateBtn' type="submit">Add Quote</button>
+      <input type="text" name="quote" placeholder="Quote">
+      <input type="text" name="author" placeholder="Author">
+      <button id="add-quote-btn">Add Quote</button>
     </form>
-<div id="list">
-    <button id="char-count-btn">Character Count (with space)</button>
-    <button id="char-count-no-space-btn">Character Count (without space)</button>
-    <button id="word-count-btn">Word Count</button>
-    <button id="like-btn">Like</button>
-</div>
+    <button id="num-chars-btn">Number of Characters</button>
+    <button id="num-words-btn">Number of Words</button>
+    <button id="like-quote-btn">Like Quote</button>
+    <form id="filter-form">
+      <input type="text" name="author" placeholder="Author">
+      <button id="filter-btn">Filter</button>
+    </form>
+    <button id="previous-btn">Previous</button>
+    <button id="next-btn">Next</button>
+  </body>
     <script src="miniproject.js"></script>
 </body>
 </html>
