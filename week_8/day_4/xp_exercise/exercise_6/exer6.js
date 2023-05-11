@@ -1,7 +1,7 @@
-//Evaluate these (ie True or False)
+// Evaluate these (ie True or False)
 
-//[2] === [2]  // false
-//{} === {} //false
+// [2] === [2]  // false
+// {} === {} //false
 
 const object1 = { number: 5 }; 
 const object2 = object1; 
