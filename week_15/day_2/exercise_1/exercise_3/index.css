@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #9C27B0, #2196F3);
+    color: #fff;
+    overflow: hidden;
+    animation: backgroundAnimation .3s infinite alternate linear;
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#userData {
+    font-size: 1.5rem;
+    text-transform: none;
+    letter-spacing: 3px;
+}
