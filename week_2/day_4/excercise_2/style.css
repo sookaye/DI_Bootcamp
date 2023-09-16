@@ -1,0 +1,27 @@
+body {
+    background-color: var(--light-color--);
+    margin: 0;
+}
+
+a.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--bs-blue);
+    transition: .3s all ease-in-out;
+
+}
+.card {
+    min-height: 26rem;
+}
+.h5, h5 {
+    font-size: 1.65rem;
+    min-height: 2.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .p-5 {
+        padding: 6rem!important;
+    }
+}
+
+

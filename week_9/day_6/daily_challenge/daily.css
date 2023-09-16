@@ -1,0 +1,110 @@
+body { 
+    background: linear-gradient(96deg, rgba(2,0,36,1) 0%, rgba(121,0,166,1) 100%);
+    margin: 0;
+    width: 100%;
+    font-family: 'Montserrat';
+  }
+button {
+    cursor: pointer;
+    color: var(--light-color--);
+    background: transparent;
+    padding: .5rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--light-color--);
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    display: block;
+    margin: 1rem auto;
+}
+button:hover {
+color: #020202;
+background: var(--light-color--);
+}
+
+form {
+position: relative;
+z-index: 1;
+background: var(--light-color--);
+max-width: 400px;
+margin: 1vh auto 1vh;
+padding: 2rem;
+text-align: center;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+form input {
+outline: 0;
+background: #f2f2f2;
+width: 100%;
+border: 0;
+margin: 0 0 15px;
+padding: 15px;
+box-sizing: border-box;
+font-size: 14px;
+}
+label.check {
+display: inline;
+font-size: .7rem;
+text-align: left;
+float: left;
+padding: 0 0rem;
+}
+label input.box {
+display: inline;
+float: left !important;
+width: 1rem !important;
+padding: 0 1rem;
+margin: 0 .5rem;
+margin-bottom: 1rem;
+}
+label {
+    margin: 1rem 0;
+    display: block;
+    text-align: left;
+}
+h1 {
+font-size: 2rem;
+margin: 1rem 0;
+color: var(--light-color--);
+text-align: center;
+}
+form button {
+text-transform: uppercase;
+outline: 0;
+background: var(--blue-color--);
+width: auto;
+border: 0;
+padding: 15px;
+color: var(--light-color--);
+font-size: 14px;
+-webkit-transition: all 0.3 ease;
+transition: all 0.3 ease;
+cursor: pointer;
+}
+form button:hover, form button:active, form button:focus {
+background: var(--dark-color--);
+color: var(--light-color--);
+}
+.listTasks p {
+color: #333;
+background: #fff;
+max-width: 432px;
+margin: 0.5rem auto;
+padding: 1rem;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+div#gif-container {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    height: auto;
+    max-height: 25em;
+}
+div#gif-container img {
+border: 5px solid var(--light-color--);
+}
+:root {
+--light-color--: #fff;
+--dark-color--: #000;
+--blue-color--: #7900a6;
+}

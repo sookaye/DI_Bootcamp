@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-image: url(circuit-pattern\ \(1\).png);
+    background-color: blueviolet;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 70em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav {
+    background-color: rgb(0, 255, 157);
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    color: #333;
+    font-weight: 400;
+    font-family: 'Bungee Inline', cursive;
+  }
+  
+  #search-box {
+    display: inline-block;
+    max-width: 40em;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    background-image:url(black-thread.png);
+    background-color: aquamarine;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 84%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 1rem;
+  }
+  
+  .card h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    #search-box {
+        max-width: 20em;
+    }
+  }

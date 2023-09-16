@@ -1,0 +1,29 @@
+{
+  "name": "di_bootcamp",
+  "version": "0.1.0",
+  "description": "JS96 part time",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node, name of js file",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sookaye/DI_Bootcamp.git"
+  },
+  "keywords": [],
+  "author": "Ashley Sookaye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sookaye/DI_Bootcamp/issues"
+  },
+  "homepage": "https://github.com/sookaye/DI_Bootcamp#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {}
+}

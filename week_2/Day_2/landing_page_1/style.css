@@ -1,0 +1,212 @@
+body {
+    background-color: var(--light-color--);
+    background-image: url(header.jpg);
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: var(--dark-color--);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    grid-template-areas: "title"
+                        "amount"
+                        "panel";
+}
+.title {
+    grid-area: title;
+}
+.amount-row {
+    display: grid;
+    grid-area: amount;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "a"
+                         "b"
+                         "c";
+    max-width: 100em;
+    margin: 0 auto;
+}
+.block-1 {
+    grid-area: a;
+    display: grid;
+    justify-content: center;
+}
+.block-2 {
+    grid-area: b;
+    display: grid;
+    justify-content: center;
+}
+.block-3 {
+    grid-area: c;
+    display: grid;
+    justify-content: center;
+}
+
+.panel-row {
+    display: grid;
+    grid-area: panel;
+    max-width: 90em;
+    margin: 0 auto;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:"aa"
+                        "bb" 
+                        "cc";
+}
+.panel.a1 {
+    grid-area: aa;
+    display: grid;
+    flex-direction: column;
+}
+.panel.a2 {
+    grid-area: cc;
+    display: grid;
+    flex-direction: column;
+}
+.panel.a3 {
+    grid-area: bb;
+    display: grid;
+    flex-direction: column;
+}
+div.panel {
+    padding: 2rem;
+    position: relative;
+    background-color: var(--light-color--);
+    padding: 0rem;
+    margin: 1rem;
+    display: grid;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 4px rgb(51 51 51 / 19%);
+}
+div.panel img {
+    height: 4.5rem;
+    border-radius: 100%;
+    width: auto;
+    display: block;
+    margin: -1.5rem auto ;
+    border: 1px solid var(--light-color--;);
+    z-index: 2;
+}
+div.panel h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    color: var(--light-color--);
+}
+h2.num {
+    font-size: 1.6rem;
+    color: var(--blue-color--);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+.amount-row p {
+    padding: 1rem;
+}
+div.panel p, p {
+    letter-spacing: 2px;
+    font-size: .8rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+}
+p.description {
+    color: var(--light-color--);
+    padding: 0 !important;
+}
+.bg1 {
+ padding: 1.5rem 1rem;
+ background-color: var(--blue-color--);
+}
+.bg-2 {
+    padding: 1.5rem 1rem;
+    background-color: #fb8b8a;
+   }
+.bg-3 {
+padding: 1.5rem 1rem;
+background-color: #47c1bf;
+}
+
+:root {
+    --light-color--: #fff;
+    --dark-color--: #000;
+    --blue-color--: #5c6ac4;
+}
+
+/**media Query**/
+@media only screen and (min-width: 721px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+   
+    .amount-row {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "a . b"
+                            ". c .";
+    }
+    .panel-row {
+        grid-template-rows: .7fr 16rem auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:"aa . bb"
+                            "aa cc bb" 
+                            ". cc .";
+    }
+    h2.num {
+        font-size: 1.8rem;
+    }
+   
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid {
+        grid-template-rows: repeat(2, auto) 1fr auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "title title title"
+                            "amount amount amount"
+                            ". . ."
+                            "panel panel panel";
+    }
+    .amount-row {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "a b c";
+    }
+    .panel-row {
+        grid-template-rows: .7fr 11rem auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:"aa . bb"
+                            "aa cc bb" 
+                            ". cc .";
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2.num {
+        font-size: 2rem;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2.num {
+        font-size: 2.5rem;
+    }
+}

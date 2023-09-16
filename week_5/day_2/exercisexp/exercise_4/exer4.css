@@ -1,0 +1,8 @@
+img {
+    width: 100px;
+    height: auto;
+}
+
+.is-read {
+    color: red;
+}
