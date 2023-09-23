@@ -1,3 +1,6 @@
 [submodule "DI_Bootcamp"]
 	path = DI_Bootcamp
 	url = https://github.com/sookaye/DI_Bootcamp
+[submodule "Di_Bootcamp2"]
+	path = Di_Bootcamp2
+	url = https://github.com/sookaye/Di_Bootcamp2
