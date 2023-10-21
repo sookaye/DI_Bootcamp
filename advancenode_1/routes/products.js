@@ -1,5 +1,3 @@
-
-
 // crud operation
 // GET, PUT, POST, DELETE
 // GET => read
@@ -9,10 +7,13 @@
 
 const express = require('express');
 const router = express.Router();
-const { createProduct } = require('../controllers/products.js');
-const { getProductById } = require('../controllers/products.js');
+const { createProduct, getProduct } = require('../controllers/products.js');
 
 router.post('/', createProduct);
-router.get('/', getProductById);
+
+router.get('/id/:id', getProduct)
 
 module.exports = router;
+
+connectionString="Data Source=DESKTOP-B63A2D5\SQLEXPRESS;Initial Catalog=V1-15062021;Integrated Security=True;MultipleActiveResultSets=False;Connect Timeout=30;" 
+providerName="System.Data.SqlClient"
