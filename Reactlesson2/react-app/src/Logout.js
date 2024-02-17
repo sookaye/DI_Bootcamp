@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 const Logout = ({ setLoggedIn }) => {
   useEffect(() => {
     localStorage.removeItem('loggedIn');
