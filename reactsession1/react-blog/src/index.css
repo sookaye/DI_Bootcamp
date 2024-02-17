@@ -1,0 +1,375 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600&family=Playfair+Display:wght@400;500;600&display=swap');
+body {
+    margin: 0;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3rem;
+  padding: 0.5rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  align-self: center;
+}
+/* Styles for the main container */
+.azone-panel01 {
+  display: block; /* Display items horizontally */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light gray box shadow */
+  padding: 20px; /* Add padding as needed */
+  margin-top: 4em;
+}
+.bgAside01 {
+  display: flex;
+  max-width: 90em;
+  margin: 0 auto;
+  justify-content: center;
+}
+/* Styles for the ico (rounded icon) */
+.ico {
+  display: flex;
+  color: #ff75af; /* Pink color for the icon */
+  margin-right: 12px; /* Add margin between icon and text */
+}
+
+/* Styles for each panel */
+.panel {
+  flex: 0 0 25%; /* Let each panel grow to fit its content */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: left; /* Center text inside the panel */
+  margin: 0 10px; /* Add margin between panels */
+  white-space: nowrap; /* Prevent panel content from wrapping */
+}
+
+/* Styles for the panel title */
+.panel-title {
+  font-family: 'montserrat';
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #333333; /* Text color */
+}
+
+/* Additional styles for the text inside the panels */
+.txt {
+  font-family: 'montserrat';
+  font-size: 1.3rem; /* Adjust font size as needed */
+  color: #555555; /* Text color */
+}
+/* Media queries for responsiveness */
+@media (max-width: 1199px) {
+  .bgAside01 {
+    flex-wrap: wrap; /* Allow panels to wrap to the next line */
+  }
+  
+  
+}
+
+@media (max-width: 767px) {
+  .bgAside01 {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items on small screens */
+  }
+  
+  .panel {
+    margin: 10px 0; /* Add margin between panels on small screens */
+  }
+  .logo-bandeau img {
+    height: 8rem !important;
+  }
+  .headerstyle span {
+    font-size: 1rem !important;
+  }
+  .navbar-expand .navbar-nav .nav-link {
+    font-size: 0.7rem !important;
+  }
+}
+
+
+ .headerstyle {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 90vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400 !important;
+    margin-bottom: 1em;
+  }
+
+ .headerstyle h1 {
+    font-size: 4.5rem !important;
+    z-index: 2 !important;
+}
+  .headerstyle:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.541);
+  }
+
+ .topbarstyle {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 6px 2px rgb(51 51 51 / 22%);
+  }
+
+  .navstyle  {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    vertical-align: middle;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+  }
+
+  .logo img {
+        height: 3.5rem;
+        width: auto;
+        transition: all .3s ease-in-out;
+        scale: 1;
+  }
+  .logo img:hover {
+    scale: 0.9;
+}
+  .menu {
+    margin-right: 1rem;
+}
+.logo-bandeau img {
+  height: 12rem;
+  width: auto;
+  z-index: 2;
+  transition: all .3s ease-in-out;
+  scale: 1;
+}
+.logo-bandeau img:hover {
+  scale: .9;
+}
+a.logo-bandeau {
+  z-index: 2;
+  pointer-events: all;
+  padding-bottom: .5rem;
+}
+.headerstyle span {
+  z-index: 2;
+  font-family: 'montserrat';
+  font-size: 2rem;
+  letter-spacing: 5px;
+  line-height: 1.8;
+}
+
+.store {
+  max-width: 90em;
+  margin: 0 auto !important;
+}
+
+.btn-primary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #f773aa;
+  --bs-btn-border-color: #f773aa;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #880085;
+  --bs-btn-hover-border-color: #f773aa;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #9700b3;
+  --bs-btn-active-border-color: #9700b3;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #cd0dfd;
+  --bs-btn-disabled-border-color: #cd0dfd;
+}
+button.w-100.btn.btn-primary, button.btn.btn-primary {
+  border-radius: 2px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: #ff75af !important;
+    border-color: #ff75af !important;
+    color: #333 !important;
+}
+button.w-100.btn.btn-primary:hover, button.btn.btn-primary:hover {
+  background: #8d3459 !important;
+    border-color: #8d3459 !important;
+    color: #ffffff !important;
+}
+button.btn.btn-danger.btn-sm {
+  background: #333;
+  border-color: #333;
+}
+.navbar-expand .navbar-nav {
+  justify-content: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.pro-title {
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+span.ms-2.text-muted {
+  font-size: 1rem;
+  color: #000000 !important;
+  background: #d6d6d6 !important;
+  padding: 0.3rem;
+  border-radius: 2px;
+  font-weight: 400;
+}
+footer.page-footer {
+  padding: 4em 0 0!important;
+  background: #f0f0f0;
+  margin-top: 0em;
+  margin-bottom: 0;
+  font-family: montserrat;
+}
+.footer-copyright.text-center {
+  background: #ffbeda;
+  margin-top: 4em;
+  padding: 2rem;
+}
+.footer-copyright a {
+  text-decoration: none;
+  color: #333;
+}
+.row.nest {
+  max-width: 90em;
+  margin: 0 auto;
+}
+a.logo2 img {
+  height: 6.5rem;
+  scale: 1;
+  transition: all .3s ease-in-out;
+}
+a.logo2 img:hover {
+  scale: 0.9;
+}
+footer h5.text-uppercase {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+footer h5.text-uppercase::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  background-color: #ccc;
+  bottom: 0;
+  left: 0;
+}
+footer .space {
+  padding-right: 2rem;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+footer ul li a::before {
+  content: "\25BA ";
+  display: block;
+  color: #FF75AF!important;
+  font-weight: 800;
+  font-size: .5rem;
+  margin-right: 0.2rem;
+  position: absolute;
+  top: 0.25rem;
+  left: -1rem;
+}
+
+footer ul li a:hover {
+  color: #880085;
+}
+.intro.row {
+  max-width: 90em;
+  padding: 2rem;
+  text-align: center;
+  font-family: montserrat;
+  margin: 0 auto;
+}
+input.mb-3.form-control {
+  max-width: 35em;
+  margin: 0 auto;
+}
+.intro2.row {
+  max-width: 55em;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: montserrat;
+}
+form .intro.row {
+  padding: 2rem 0 1em;
+}
+form {
+  overflow: hidden;
+  padding: 3em 1em;
+  max-width: 55em;
+  margin: 0 auto; 
+}
+.mb-3.news.row {
+  justify-content: center;
+}
+
+.fs-3.style01 {
+  font-size: 1.25rem !important;
+  background: #f3f3f3;
+  padding: 0.2em 0.5em;
+  box-shadow: inset 0px 1px 3px 2px #f5d1d347;
+}
