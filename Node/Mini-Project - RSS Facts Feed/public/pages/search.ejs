@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+
+    <div>
+        <div class="search-container">
+            <!-- Your search form goes here -->
+            <form action="/search/title" method="POST">
+                <label for="title">Search by Title:</label>
+                <input type="text" name="title" id="title" required>
+                <button type="submit">Search</button>
+            </form>
+
+            <form action="/search/category" method="POST">
+                <!-- Your category search form goes here -->
+            </form>
+        </div>
+
+        <!-- Display search results -->
+        <% if (searchedTitle) { %>
+            <p>Results for title: <%= searchedTitle %></p>
+        <% } else if (searchedCategory) { %>
+            <p>Results for category: <%= searchedCategory %></p>
+        <% } %>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>
