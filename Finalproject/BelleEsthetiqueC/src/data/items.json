@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Body Lotion",
+    "price": 750,
+    "imgUrl": "/imgs/creamcare.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cleans Cream",
+    "price": 1350,
+    "imgUrl": "/imgs/creambody.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Shampoo",
+    "price": 500,
+    "imgUrl": "/imgs/hairshampoo.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Repair & Care",
+    "price": 1250,
+    "imgUrl": "/imgs/beauty (3).jpg"
+  },
+  {
+    "id": 5,
+    "name": "Moiseturising",
+    "price": 1200,
+    "imgUrl": "/imgs/lotion.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Micro biome",
+    "price": 1200,
+    "imgUrl": "/imgs/beauty (1).jpg"
+  },
+  {
+    "id": 7,
+    "name": "Moiseturising",
+    "price": 1200,
+    "imgUrl": "/imgs/beauty (4).jpg"
+  },
+  {
+    "id": 8,
+    "name": "Moiseturising",
+    "price": 1200,
+    "imgUrl": "/imgs/beauty (5).jpg"
+  }
+]
