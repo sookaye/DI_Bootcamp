@@ -7,13 +7,13 @@ const stripe = require('stripe')('sk_test_51OcMTkBLE7SFLUkZ5VulZE8633m4gpWY6LSS6
 const app = express();
 const port = 3002;
 
-// Use CORS middleware
+//  CORS middle
 app.use(cors());
 
-// Middleware to parse JSON data
+// Json parse
 app.use(bodyParser.json());
 
-// PostgreSQL connection configuration
+// configuration access postgress
 const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
@@ -22,12 +22,12 @@ const pool = new Pool({
   port: 5432,
 });
 
-// Endpoint to create a Checkout Session
+// point final  checkout
 app.post('/create-checkout-session', async (req, res) => {
   const { items, successUrl, cancelUrl } = req.body;
 
   try {
-    // Create a Checkout Session
+    // checkout session
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: items,

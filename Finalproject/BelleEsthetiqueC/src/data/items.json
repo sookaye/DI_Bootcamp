@@ -47,4 +47,11 @@
     "price": 1200,
     "imgUrl": "/imgs/beauty (5).jpg"
   }
+  ,
+  {
+    "id": 8,
+    "name": "Ashley",
+    "price": 1200,
+    "imgUrl": "/imgs/beauty (5).jpg"
+  }
 ]

@@ -1,4 +1,3 @@
-
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
@@ -29,7 +28,7 @@ export function Navbar() {
           </Nav.Link>
         </Nav>
         <Nav.Link  to="/store" as={NavLink} >
-            <Button variant="btn btn-primary" className="mr-2">Products</Button>
+            <Button variant="btn btn-primary d-none d-md-inline-block" className="mr-2">Products</Button>
           </Nav.Link>
         {cartQuantity > 0 && (
           <Button

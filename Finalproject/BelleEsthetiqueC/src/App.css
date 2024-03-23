@@ -365,3 +365,14 @@ form {
 .rounded-circle {
   margin-left: 5px;
 }
+
+p.success-message {
+  text-align: center;
+  background: hsl(215.75deg 98.36% 52.16%);
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-width: fit-content;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #33333359;
+}
